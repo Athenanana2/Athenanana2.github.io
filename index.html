@@ -3,15 +3,152 @@
 	<head>
 		<meta charset="utf-8">
 		<title>肺结核、艾滋病、新冠肺炎、病毒性肝炎信息直通</title>
+		<style>
+		* {
+			margin:10;
+			padding:0;
+		}
+		li {
+			list-style:none;
+		}
+		  body {
+			  font:16px/28px 'Microsoft YaHei';
+		  }
+		  h1 {
+			  font-weight:400;
+			  text-align:center;
+		  }
+		  a {
+			   text-decoration:none;
+		  }
+		  .ce {
+			  text-decoration:none;
+			  display:block;
+			  width:300px;
+			  height:80px;
+			  background-color:#55585a;
+			  font-size:20px;
+			  color:#fff;
+			  text-indent:2em;
+		  }
+		  .ce:hover {
+			  background-color: #ff6700;
+		  }
+		  .gray {
+			  color:#888888;
+			  font-size: 12px;
+			  text-align:center;
+		  }
+		 .search {
+			 color:#666;
+			 width:170px;
+		 }
+		 .btn{
+			 font-weight:700;
+		 }
+		 .pic{
+			 text-align:center;
+		 }
+		 .footer {
+			 color:#888888;
+			 font-size:12px;
+		 }
+		 .fl {
+			 width:220px;
+			 height:280px;
+			 float:left;
+		 }
+		 .crb-promo {
+			 position:relative;
+			 width:820px;
+			 height:400px;
+			 background-color: pink;
+			 margin:10px 50px 0px;
+			 float: right;
+		 }
+		 .crb-promo img{
+			 width:820px;
+			 height:400px;
+		 }
+		 /*制作两个滚动图表*/
+		 .prev {
+			 position: absolute;
+			 left:0;
+			 top:50%;
+			 margin-top:-15px;
+			 widtn:20px;
+			 height:30px;
+			 background: rgba(0,0,0,.2);
+			 text-align:center;
+			 line-height:30px;
+			 color:#fff;
+			 text-decoration:none;
+			 border-top-right-radius:15px;
+			 border-bottom-right-radius:15px;
+		 }
+		 .next {
+		 			 position: absolute;
+		 			 right:0;
+		 			 top:50%;
+		 			 margin-top:-15px;
+		 			 widtn:20px;
+		 			 height:30px;
+		 			 background: rgba(0,0,0,.2);
+		 			 text-align:center;
+		 			 line-height:30px;
+		 			 color:#fff;
+		 			 text-decoration:none;
+		 			 border-top-left-radius:15px;
+		 			 border-bottom-left-radius:15px;
+		 }
+		 /*下面是制作滚动小圆的部分*/
+		 .promo-nav {
+			 position:absolute;
+			 bottom:10px;
+			 left:50%;
+			 margin-left:-35px;
+			 width:70px;
+			 height:13px;
+			 /*ackground-color:pink;*/
+			 background:rgba(255,255,255,.3)
+			 border-radius:7px;
+		 }
+		 .promo-nav li {
+			float:left;
+			 width:8px;
+			 height: 8px;
+			 background-color: #888888;
+			 border-radius:50%;
+			 margin:3px;
+		 }
+		 .promo-nav .selected{
+			 background-color: #ff5000;
+		 }
+		</style>
 	</head>
 	<body>
-		<span><h1>2020年1月至2022年3月全球重点传染病信息中心</h1></span>
-		<span>肺结核</span>
-		<br/></be><span>艾滋病</span>
-		<br/><span>新冠肺炎</span>
-		<br/><span>病毒性肝炎</span>
-		<li><img src="image/肺结核、病毒性肝炎月发病人数.png " title="肺结核、病毒性肝炎发病人数数据" width="800" border="1"></li>
-		<li><img src="image/艾滋病、新冠肺炎发病人数.png " title="肺结核、艾滋病发病人数数据" width="800" border="1"></li>
-		<li><img src="image/全国四类传染病月死亡人数.png " title="全国四类传染病月死亡人数数据" width="800" border="1"></li>
+		<span><h1>全球重点传染病数据分析中心</h1></span>
+		<div class="gray">2022-5-17 19:08 来源：<a href="#">中国疾病预防控制中心</a>
+		<input type="text" value="请输入查询条件..." class="search"> <button class="btn">搜索</button>
+		</div>
+			<hr>
+		<div class="fl">
+			<a href="part.html" class="ce">原始数据</a>
+			<a href="part1.html" class="ce">肺结核</a>
+			<a href="part2.html" class="ce">艾滋病</a>
+			<a href="part3.html" class="ce">福建新冠肺炎</a>
+			<a href="part4.html" class="ce">病毒性肝炎</a>
+		</div>
+		<div class="crb-promo">
+			<a href="#"><img src="image/肺结核、病毒性肝炎月发病人数.png"></a>
+			<a href="#" class="prev">&lt;</a>
+			<a href="#" class="next">&gt;</a>
+			<ul class="promo-nav">
+				<li class="selected"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
 	</body>
 </html>
